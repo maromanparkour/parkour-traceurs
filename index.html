@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  overflow:hidden;
+  background-color:#636060;
+}
+.navbar a {
+  float:left;
+  display:block;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+  padding:15px 25px;
+  font-family:calibri;
+  font-size:20px;
+}
+.navbar a.right {
+  float:right;
+}
+.navbar a:hover {
+  background-color:lightgrey;
+  color:black;
+}
+.active {
+  color:black;
+  background-color:yellow;
+}
+.row {
+  margin-top:20px;
+  font-family:calibri;
+  display: -ms-flexbox;
+  display:flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap:wrap;
+
+}
+.side {
+  -ms-flex:10%;
+  flex:10%;
+  background-color:#949292;
+  padding:15px;
+  margin-bottom:0px;
+  margin-right:0px;
+}
+.main {
+  margin-left:0px;
+  padding:20px;
+  -ms-flex: 65%;
+  flex:65%;
+}
+.footer {
+  padding:5px;
+  text-align:center;
+  font-family:calibri;
+  font-size:22px;
+  background:#636060;
+}
+.button {
+  width:100%;
+  height:50px;
+  border:3px solid yellow;
+  color:yellow;
+  background-color:black;
+  font-family:calibri;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+  cursor:pointer;
+  margin-top:50px;
+}
+.button:hover {
+  background-color:yellow;
+  color:black;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+body {
+  background-image: url(kong-preciz.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h1 style="background-color:yellow; text-align:center; font-family:calibri; font-size:80px;padding:40px;margin-top:0px;margin-bottom:0px;" id="Head1">Parkour-traceurs</h1>
+</div>
+
+<div class="navbar" id="navbar">
+  <a href="index.html" class="active">Úvod</a>
+  <a href="history.html">História</a>
+  <a href="fashion.html">Oblečenie</a>
+  <a href="spots.html">Spoty</a>
+  <a href="world.html">Zo sveta</a>
+  <a href="contact.html">Kontakt</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="login.html" class="right">Login</a>
+</div>
+
+<div class="row">
+  <!--div class="side">
+    <h2>Parkour</h2>
+    <h5>Čo to je</h5>
+    <img src="#" style="width:auto;">
+    <p>Parkour je bla bla bla bla bla bla bla bla bllaa bla bla</p>
+  </div-->
+
+  <div class="main">
+    <div style="color:white;padding:20px;">
+      <h1>Čo je parkour</h1>
+      <p>Parkour je pohybová disciplína, ktorá vznikla pred takmer sto rokmi vo Francúzsku. Jej hlavným cieľom je zdokonaľovať pohyb, vylučovať z neho nepotrebné kroky a tým ho robiť rýchlym a efektívnym. Parkour je druh pohybu, ktorý sa nesnaží zapôsobiť, má za úlohu dostať človeka z jedného miesta na druhé v členitom prostredí mestskej architeftúry, lesa, prekážkovej dráhy a vlastne všelijakého iného miesta. Parkour nie je však len o pohybe z bodu A do bodu B, ale aj z bodu B do budu A. Takže nestačí vedieť zoskočiť z trojmetrovej steny, ale musíme na ňu znova vedieť vyliezť. Parkour sám o sebe nie je nebezpečný. Záleží na tom, ako k nemu budeme pristupovať a ako ho budeme využívať. Ako som už povedal, parkour ako taký nemá dojať ani nedchnúť, no jeho prvky, ladnosť a plynulosť pohybu z neho spravili umenie. Preto sa mu dlhú dobu hovorilo Le árt du Deplacement, čo v preklade z francúzštiny znamená umenie premiestnenia.</p>
+    </div>
+    <div style="color:white;padding:20px;margin-left:0px;">
+      <h1>Odkiaľ sem prišiel</h1>
+      <p>Parkour vznikol vo Francúzsku za tvrdých podmienok prvej svetovej vojny. Samozrejme vtedy sa mu v tej dobe hovorilo úplne inak. Vznikol z dôvodu potreby poriadneho výcviku vojakov, no neskôr sa rozšíril aj medzi hasičov, policajtov a záchranárov. Pre všetkých týchto ľudí bolo kľúčové vedieť sa pohybovať rýchlo, aby mohli včas zasiahnuť a zachrániť životy alebo chytiť zločincov.</p>
+      <div style="padding:20px;">
+        <div class="column">
+          <img src="catleap.jpg" alt="catleap" title="catleap" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="drop.jpg" alt="drop" title="drop" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="high.jpg" alt="high drop" title="high drop" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div style="color:white;padding:20px;">
+      <h1>David Belle</h1>
+      <p>David Belle je považovaný za oficiálneho zakladateľa parkouru. Hoci bol vymyslený už dávno predtým ako sa naroril. Prvenstvo v zakladaní tohto druhu pohybu si zaslúži, lebo on bol ten, ktorý vymyslel názov a celú filozofiu parkouru, o ktorej by sa dalo hovoriť hodiny, ba celé dni. Vyrastal v rodine, ktorá mu od malička vštepovala zásady správania sa takéhoto cvičenca, ktorý musel byť disciplinovaný, musel mať pevnú vôľu a železné nervy. Preto sa starým parkouristom niekedy hovorí aj samurajovia. Disciplína a sebakritika bol základ tréningu mysle a dobrá myseľ bola základom úspešného tréningu tela.</p>
+    </div>
+    <div style="color:white;padding:20px;">
+      <h1>Kto je traceur</h1>
+      <p>Traceur je pomenovanie pre človeka, ktorý nielenže robí parkour, ale musí aj žiť podľa jeho zásad a v bežnom živote praktikovať fyzické zručnosti a aj vnímať svet očami moderného samuraja. Dnes je to už trochu voľnejšie, no ja som zástancom toho, že rozdiel medzi parkouristom a traceurom je taký, že parkourista je človek, ktorý robí parkour preto, lebo ho baví a traceur je človek, ktorý robí parkour lebo ho baví a navyše pozná jeho fylozofiu, ktorá mu pomáha aj v osobnom živote a riadi sa podľa nej. Traceur je teda taký vyšší stupeň parkourového cvičenca, ktorý ovládol svoje telo spolu s mysľou, zatiaľčo parkourista ovláda len telo a jeho myseľ ochabuje. Voľný preklad slova traceur je <q>stopár</q>, ale pod slovom <q>trace</q> (stopa) rozumieme jedinca, ktorý zanecháva svoju stopu na miestach, kam iní ľudia nechodia a to ho robí výnimočným. Nekopíruje a nechodí po vytýčených dráhach ale si vždy nájdevlastnú cestu.</p>
+      <div style="padding:20px;">
+        <div class="column">
+          <img src="davbelle.jpg" alt="David Belle" title="David Belle" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="tary.jpg" alt="Tary" title="Tary" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="jump.jpg" alt="skok" title="skok" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div style="color:white;padding:20px;">
+      <br>
+      <h1>Parkour vs. freerun</h1>
+      <p>David Belle a jeho Dobrý priateľ Sébastien Foucan spoločne založili skupinu Yamakasi, ktorá praktizovala len parkour. Časom sa ukázalo, že Sébastien má na parkour celkom iný pohľad ako David. Parkour pochytil niečo aj z gymnastiky, no nikty to neboli saltá, lebo to bol nadbytočný pohyb, ktorý spomaľoval a zaneprázdňoval traceura vo flow. Sébastien začal do pohybu aplikovať viac sált a aktobatických prvkov, čo sa Davidovi až tak nepáčilo. Skupina sa po čase rozpadla a krátko na to vznikol nový štýl s názvom Freerun. Kombinuje prvky parkouru s akrobaciou a tým pohyb akosi ozvláštňuje. Ja osobne si myslím, že freerun nikdy nemal vzniknúť a že je to len zbytočné kazenie priam impozantného druhu pohybu. Parkour bez sált podľa filozofie Davida Bella je podľa mňa najlepší, lebo pohyb bez čohokoľvek, čo by vás zdržovalo je čistý a slúži presne na to, na čo bol stvorený.</p>
+    </div>
+    <div style="color:white;padding:20px;">
+      <h1>Parkour alebo Parcour</h1>
+      <p>Názov parkouru za tie roky prešiel mnohými zmenami. Na začiatku to bola prirodzená metóda, neskôr sa premenoval na umenie premiestňovania, potom vznikol názov Parcour, no <q>c</q> sa zmenilo na <q>k</q>, aby sa zdôraznika výslovnosť. Často, hlavne medzi staršími ľuďmi, dochádza k zámene za parkur, čo je jazda na koni cez prekážky.</p>
+      <div style="padding:20px;">
+        <div class="column">
+          <img src="twohander.jpg" alt="twohander" title="twohander" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="let.jpg" alt="skok" title="gap jump" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="wallrun.jpg" alt="catelap-onehand" title="catleap-onehand" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div style="color:white;padding:20px;">
+      <h1>Čo je a čo nie je parkour</h1>
+      <p>Dnes je parkour strašne skazený kvôli ľuďom, ktorí ho používajú na účely, ktoré odsudzuje aj sám David Belle. Parkour nie je určený na komerciu, ani sa nikdy nemôže stať športom, lebo šport núti ľudí súperiť proti sebe a zlepšovanie výkonu je tým pádom podnietené túžbou zviťaziť nad konkurenciou a tým narušuje jeho miernu a na seba orientovanú filozofiu. Parkour musí človek robiť preto, lebo chce a zlepšovať by sa mal z vlastnej vôle byť lepší ako včera a nie byť lepší ako niekto iný. Ďalej je tu predvádzanie. Parkour nie je určený na to, aby sme si ním šuchorili perie a vystatovali sa, že sme lepší ako iní. Traceur je chápavý človek, ktorý chová úctu k prostrediu aj k ľuďom okolo seba. A nakoniec najodpornejší zo spôsobov akými sa dá pošliapať nádherná filozofia parkouru. Už ste určite videli ako niekto vylezie na strechu mrakodrapu a skáče tam saltá, lezie v obrovských výškach bez istenia alebo sa zavesí na hranu budovy a ostatní ho natáčajú. TOTO NIKDY NEROBTE!!! Je to len hazard so svojim životom a zdravím. Prečo to tí ľudia robia? Veď parkour je taký krásny pohyb. A oni to všetko zničili. Prosím, dodržiavajte myšlienku parkouru.</p>
+    </div>
+    <button class="button" onclick="scrltp()">Späť hore</button>
+  </div>
+</div>
+
+<div class="footer">
+  <p><strong>Marek Horňak 1.B SPSEKE</strong></p>
+</div>
+
+<script>
+function scrltp() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>

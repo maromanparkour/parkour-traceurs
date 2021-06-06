@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  overflow:hidden;
+  background-color:#636060;
+}
+.navbar a {
+  float:left;
+  display:block;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+  padding:15px 25px;
+  font-family:calibri;
+  font-size:20px;
+}
+.navbar a.right {
+  float:right;
+}
+.navbar a:hover {
+  background-color:lightgrey;
+  color:black;
+}
+.active {
+  color:black;
+  background-color:yellow;
+}
+
+.main {
+  margin-left:0px;
+  padding:20px;
+  -ms-flex: 65%;
+  flex:65%;
+  font-family:calibri;
+}
+.footer {
+  padding:5px;
+  text-align:center;
+  font-family:calibri;
+  font-size:22px;
+  background:#636060;
+}
+.button {
+  width:100%;
+  height:50px;
+  border:3px solid yellow;
+  color:yellow;
+  background-color:black;
+  font-family:calibri;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+  cursor:pointer;
+  margin-top:50px;
+}
+.button:hover {
+  background-color:yellow;
+  color:black;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+hr {
+  margin:20px;
+}
+body {
+  background-image: url(b13db.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <h1 style="background-color:yellow; text-align:center; font-family:calibri; font-size:80px;padding:40px;margin-top:0px;margin-bottom:0px;" id="Head1">Parkour-traceurs</h1>
+</div>
+
+<div class="navbar" id="navbar">
+  <a href="index.html">Úvod</a>
+  <a href="history.html">História</a>
+  <a href="fashion.html">Oblečenie</a>
+  <a href="spots.html">Spoty</a>
+  <a href="world.html">Zo sveta</a>
+  <a href="contact.html">Kontakt</a>
+  <a href="quiz.html" class="active">Quiz</a>
+  <a href="login.html" class="right">Login</a>
+</div>
+
+
+
+  <div class="main">
+    <h1>Quiz o parkoure</h1>
+    <div>
+      <label for="hebert">1. Kto vymyslel prirodzenú metódu</label>
+      <br>
+      <input type="text" placeholder="Vaša odpoveď" name="hebert"></input>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="naturel">2. Na čo sa prirodzená metóda používala</label>
+      <br>
+      <input type="checkbox" name="naturel">Na prácu na poli</input><br>
+      <input type="checkbox" name="naturel">Na cvičenie vojakov a záchranárov</input><br>
+      <input type="checkbox" name="naturel">Na surfovanie</input><br>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="olymp">3. Parkour je olympijská disciplína</label>
+      <br>
+      <input type="radio" name="olymp">Pravda</input><br>
+      <input type="radio" name="olymp">Nepravda</input><br>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="b13">4. Najznámejší film s Davidom Bellom</label>
+      <br>
+      <input type="text" placeholder="Vaša odpoveď" name="b13"></input>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="david">5. David Belle je...</label>
+      <select name="david" value="Národnosť: ">
+        <option for="david" value="Vyberte">Vyberte</option>
+        <option for="david" value="Brit">Brit</option>
+        <option for="david" value="Američan">Američan</option>
+        <option for="david" value="Francúz">Francúz</option>
+      </select>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="datum">6. Kedy sa narodil David Belle</label>
+      <br>
+      <input type="date" placeholder="dd.mm.rrrr" name="datum"></input>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="yamakasi">7. Kto založil skupinu Yamakasi</label>
+      <br>
+      <input type="checkbox" name="yamakasi">David Belle a Sébastien Foucan</input><br>
+      <input type="checkbox" name="yamakasi">Bruce Lee a Jackie Chan</input><br>
+      <input type="checkbox" name="yamakasi">Yuri Boyka a Benedict Chau Belle</input><br>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="tary">8. Kto je najvýznamnejším českým predstaviteľom parkouru</label><br>
+      <select name="tary">
+        <option for="tary" value="Vyberte">Vyberte</option>
+        <option for="tary" value="Pasha">Pasha</option>
+        <option for="tary" value="Tary">Tary</option>
+        <option for="tary" value="Vova">Vova</option>
+      </select>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="duch">9. Čo znamená slovo Yamakasi</label>
+      <br>
+      <input type="text" placeholder="Vaša odpoveď" name="duch"></input>
+    </div>
+
+    <hr>
+
+    <div>
+      <label for="osvedceine">10. Prirodzená metóda sa osvedčila ako účinná výcviková technika.</label>
+      <br>
+      <input type="radio" name="osvedcenie">Pravda</input><br>
+      <input type="radio" name="osvedceine">Nepravda</input><br>
+    </div>
+  </div>
+<button class="button" onclick="scrltp()" style="margin-bottom:20px;">Späť hore</button>
+
+
+<div class="footer">
+  <p><strong>Marek Horňak 1.B SPSEKE</strong></p>
+</div>
+
+<script>
+function scrltp() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>

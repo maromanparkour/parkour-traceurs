@@ -1,0 +1,196 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.navbar {
+  overflow:hidden;
+  background-color:#636060;
+}
+.navbar a {
+  float:left;
+  display:block;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+  padding:15px 25px;
+  font-family:calibri;
+  font-size:20px;
+}
+.navbar a.right {
+  float:right;
+}
+.navbar a:hover {
+  background-color:lightgrey;
+  color:black;
+}
+.active {
+  color:black;
+  background-color:yellow;
+}
+.row {
+  margin-top:20px;
+  font-family:calibri;
+  display: -ms-flexbox;
+  display:flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap:wrap;
+
+}
+.side {
+  -ms-flex:10%;
+  flex:10%;
+  background-color:#949292;
+  padding:15px;
+  margin-bottom:0px;
+  margin-right:0px;
+}
+.main {
+  margin-left:0px;
+  padding:20px;
+  -ms-flex: 65%;
+  flex:65%;
+}
+.footer {
+  padding:5px;
+  text-align:center;
+  font-family:calibri;
+  font-size:22px;
+  background:#636060;
+}
+.button {
+  width:100%;
+  height:50px;
+  border:3px solid yellow;
+  color:yellow;
+  background-color:black;
+  font-family:calibri;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+  cursor:pointer;
+  margin-top:50px;
+}
+.button:hover {
+  background-color:yellow;
+  color:black;
+}
+.sticky {
+  position:fixed;
+  top:0;
+  width:100%;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+body {
+  background-image: url(pk-spot.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body style="background-color:black">
+
+<div>
+  <h1 style="background-color:yellow; text-align:center; font-family:calibri; font-size:80px;padding:40px;margin-top:0px;margin-bottom:0px;" id="Head1">Parkour-traceurs</h1>
+</div>
+
+<div class="navbar" id="navbar">
+  <a href="index.html">Úvod</a>
+  <a href="history.html">História</a>
+  <a href="fashion.html">Oblečenie</a>
+  <a href="spots.html" class="active">Spoty</a>
+  <a href="world.html">Zo sveta</a>
+  <a href="contact.html">Kontakt</a>
+  <a href="quiz.html">Quiz</a>
+  <a href="login.html" class="right">Login</a>
+</div>
+
+<div class="row">
+  <!--div class="side">
+    <h2>Parkour</h2>
+    <h5>Čo to je</h5>
+    <img src="#" style="width:auto;">
+    <p>Parkour je bla bla bla bla bla bla bla bla bllaa bla bla</p>
+  </div-->
+
+  <div class="main">
+    <div style="color:black;">
+      <h1>Workout parky</h1>
+      <p>Workout parky sú prístupné širokej verejnosti. Je možné si na nich zacvičiť aj trénovať parkour, preto je dobré, aby každý dobrý parkourista mal v repertoári spotov aj wourkout parky. Celkom máme v Košiciach tri takéto parky.</p>
+      <ul>
+        <li>Nad jazerom pri Hornáde</li>
+        <li>Na Terase na ulici Sokolovská</li>
+        <li>V parku Anička</li>
+      </ul>
+      <iframe src="https://www.google.sk/maps/@48.6722002,21.285266,4141m/data=!3m1!1e3" style="margin-left:auto;margin-right:auto;width:600px;height:400px;display:block;"></iframe>
+    </div>
+    <div style="color:black;">
+      <h1>Spoty</h1>
+      <p>Pre dobrý a kvalitný tréning je nutné nájsť dobé spoty. Tie sa vo veľkom meste akým sú aj Košice hľadajú náročne a zhĺhavo. Tu je zoznam najlepších spotov v Košiciach, kde sa vám bude určite dobre trénovať.</p>
+      <ul>
+        <li>Ťahanovce</li>
+        <ul>
+          <li>Americká trieda</li>
+          <li>Bukurešťská</li>
+          <li>Pri Freshi</li>
+        </ul>
+        <li>Terasa</li>
+        <ul>
+          <li>Muškátová</li>
+          <li>Orgovánová</li>
+          <li>Bernoláková</li>
+        </ul>
+      </ul>
+      <iframe src="https://www.google.sk/maps/@48.6722002,21.285266,4141m/data=!3m1!1e3" style="margin-left:auto;margin-right:auto;width:600px;height:400px;display:block;"></iframe>
+    </div>
+    <div style="color:black;">
+      <h1>Telocvične</h1>
+      <p>Ak skúšate nové triky alebo je vonku zlé počasie, možete ísť do telocvične. Gymnastické telocvične sú prispôsobené aj na parkour a dá sa v nich bezpečne trénovať. Sú vybavené mäkkými žinenkami a molitanoými prekážkami, a preto sú vhodné pre deti, ale aj pre pokročilých pri skúšaní nových pohybov.</p>
+      <ul>
+        <li>Family gym oáza</li>
+        <li>Tréningové centrum Kalimero</li>
+      </ul>
+      <iframe src="https://www.google.sk/maps/@48.6722002,21.285266,4141m/data=!3m1!1e3" style="margin-left:auto;margin-right:auto;width:600px;height:400px;display:block;"></iframe>
+    </div>
+    <button class="button" onclick="scrltp()">Späť hore</button>
+  </div>
+</div>
+
+
+
+
+
+<div class="footer">
+  <p><strong>Marek Horňak 1.B SPSEKE</strong></p>
+</div>
+
+<script>
+function scrltp() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+
+</body>
+</html>
