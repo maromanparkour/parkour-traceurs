@@ -77,10 +77,20 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+input[type=submit] {
+  background-color: black;
+  color: yellow;
+  padding: 12px 20px;
+  border: 3px solid yellow;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top:20px;
+}
 input[type=submit]:hover {
   background-color: yellow;
   color: black;
 }
+
 </style>
 </head>
 <body>
@@ -195,7 +205,7 @@ input[type=submit]:hover {
       <input type="radio" name="osvedcenie">Pravda</input><br>
       <input type="radio" name="osvedceine">Nepravda</input><br>
     </div>
-    <input type="submit" value="Odoslať" onclick="alert('Vaše odpovede boli odoslané')"style="padding:20px;background-color:black;color:yellow;border: 3px solid yellow;margin-top:16px;border-radius: 4px;"></input>
+    <input type="submit" value="Odoslať" onclick="alert('Vaše odpovede boli odoslané')"></input>
   </div>
 <button class="button" onclick="scrltp()" style="margin-bottom:20px;">Späť hore</button>
 
