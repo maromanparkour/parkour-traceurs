@@ -93,6 +93,11 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+#demo {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+}
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
@@ -142,6 +147,8 @@ body {
       <h1>Nový film s Davidom Bellom</h1>
       <p>Bronx alebo Rogue city. Toto je názov filmu, kde David Belle stvárnil jednu z hlavných rolí. Film v sebe ukrýva napätie, hrdinstvo a hlavne šialenú dávku akcie. Rozhodne odporúčam tým, ktorí ho ešte nevideli si ho pozrieť. Marseille. Všetko sa začína masakrom hodným zabitia telefónneho baru, ktorý spôsobili muži z klanu Orsoni. Vyšetrovanie má na starosti policajt protigangovej brigády Richardom Vronskim neortodoxnými metódami, ktorý čelí svojim rivalom z BRB, ktorým velí Costa, policajný major v problémových činoch. Nový riaditeľ, divízny komisár Angel Leonetti, prichádza do poriadku v Marseille a zvládne bláznivé psy vo svojom tíme. Všetci si však rýchlo uvedomia, že nič neobdržíš bez obetí alebo rizika. Najmä keď dcéra komisára drgne s antigangom, že muži zo severných miest útočia na Korzičanov, že kľúčový svedok je počas policajného zaistenia zavraždený a že policajný zbor vyšle jeho najtrpkejšieho agenta. Takže Vronski a jeho muži, aby si zachránili kožu, dostanú šmyk na rýchlej ceste tých najnebezpečnejších. </p>
       <iframe width="650" height="320" src="https://www.youtube.com/embed/vGBS24SpUSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="margin-left:auto;margin-right:auto;display:block;" allowfullscreen></iframe>
+      <h2>Odpočet do narodenín Davida Bella.</h2>
+      <p id="demo"></p>
     </div>
     <div style="color:black;">
       <h1>Preteky</h1>
@@ -181,6 +188,28 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+  
+var countDownDate = new Date("Apr 29, 2022 00:00:00").getTime();
+
+var x = setInterval(function() {
+
+  var now = new Date().getTime();
+
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Prajeme všetko najlepšie Davidovi Bellovi";
+  }
+}, 1000);
 </script>
 
 
