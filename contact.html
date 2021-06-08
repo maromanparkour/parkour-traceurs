@@ -138,6 +138,20 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
+.btn {
+  background-color: black;
+  border-radius: 4px;
+  border: 3px solid yellow;
+  color: yellow;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: yellow;
+  color: black;
+}
 @media screen and (max-width: 700px) {
   .row {   
     flex-direction: column;
@@ -225,7 +239,10 @@ body {
         </div>
       </form>
     </div>
-
+    <h2>Stiahnite si dokument o parkoure</h2>
+    <a href="API_Word - Parkour.docx" download="parkour">
+      <button class="btn"><i class="fa fa-download"></i> Stiahnuť dokument</button>
+    </a>
   </div>
   <button class="button" onclick="scrltp()">Späť hore</button>
 </div>
